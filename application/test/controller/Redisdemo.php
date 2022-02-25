@@ -3,11 +3,12 @@
 namespace app\test\controller;
 
 use think\cache\driver\Redis;
+use think\Config;
 
 class Redisdemo
 {
     static $options = [
-        'host'       => '39.101.194.252',
+        'host'       => '127.0.0.1',
         'port'       => 6379,
         'password'   => '',
         'select'     => 0,
