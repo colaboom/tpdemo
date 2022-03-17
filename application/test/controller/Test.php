@@ -2,11 +2,14 @@
 
 namespace app\test\controller;
 
+use app\test\model\TestModel;
+
 class Test
 {
     public function index()
     {
-        echo "test/test/index";
+        $testModel = new TestModel();
+        echo $testModel->index();
     }
 
     public function test()
